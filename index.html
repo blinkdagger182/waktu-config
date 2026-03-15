@@ -266,7 +266,7 @@
           <div class="row" style="margin-top: 8px;">
             <button class="btn-soft" id="check-upload-setup" type="button">Check Upload Setup</button>
           </div>
-          <p class="tiny">Token is required for upload. Use each item's own Upload button below. Files go to <code>docs/images/</code> and the item URL is auto-filled.</p>
+          <p class="tiny">Token is required for upload. Use each item's own Upload button below. Files go to <code>images/</code> and the item URL is auto-filled.</p>
         </div>
       </aside>
     </div>
@@ -665,13 +665,13 @@
           repo,
           branch,
           token,
-          path: "docs/marketing-modal.json",
+          path: "marketing-modal.json",
           text: jsonText,
           message: "chore(marketing): update modal config"
         });
-        setStatus("Saved docs/marketing-modal.json successfully.");
+        setStatus("Saved marketing-modal.json successfully.");
         if (showPopup) {
-          window.alert("Saved docs/marketing-modal.json to GitHub.");
+          window.alert("Saved marketing-modal.json to GitHub.");
         }
         return true;
       } catch (error) {
@@ -706,13 +706,13 @@
             repo,
             branch,
             token,
-            path: "docs/version-check.json",
+            path: "version-check.json",
             text: jsonText,
             message: "chore(version): update app version gate config"
           });
-          setStatus("Saved docs/version-check.json successfully.");
+          setStatus("Saved version-check.json successfully.");
           if (showPopup) {
-            window.alert("Saved docs/version-check.json to GitHub.");
+            window.alert("Saved version-check.json to GitHub.");
           }
           return true;
         } catch (error) {
@@ -748,7 +748,7 @@
       try {
         setStatus(`Uploading image for item ${index + 1}...`);
         const filename = sanitizeFilename(file.name);
-        const path = `docs/images/${filename}`;
+        const path = `images/${filename}`;
         const content = await fileToBase64(file);
         const existingSha = await getExistingFileSha({ owner, repo, path, branch, token });
 
@@ -813,7 +813,7 @@
       const json = JSON.stringify(toAppJSON(), null, 2);
       try {
         await navigator.clipboard.writeText(json);
-        setStatus("JSON copied. Paste into docs/marketing-modal.json and push to GitHub.");
+        setStatus("JSON copied. Paste into marketing-modal.json and push to GitHub.");
       } catch {
         setStatus("Clipboard blocked. Use Download JSON.");
       }
