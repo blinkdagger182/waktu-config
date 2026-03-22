@@ -1,9 +1,15 @@
 {
-  "display_key": "v1",
   "title": "Live Notification",
   "subtitle": "Add it from Lock Screen > Customize > Widgets > Waktu",
   "cta_text": "Got it",
   "slides": [
+    {
+      "title": "Selam",
+      "subtitle": "Open Waktu to see full details and translation.",
+      "image_title": "Selam",
+      "image_subtitle": "Open Waktu to see full details and translation.",
+      "image_url": "https://blinkdagger182.github.io/waktu-config/images/group-16.png?v=1774144860139"
+    },
     {
       "title": "Live Notification",
       "subtitle": "See the next prayer countdown and reminders right from your Lock Screen.",
@@ -17,13 +23,6 @@
       "image_title": "Daily Quran Widget",
       "image_subtitle": "One inspiring ayah every day.",
       "image_url": "https://blinkdagger182.github.io/waktu-config/images/IMG_9653.jpg?v=4"
-    },
-    {
-      "title": "Tap For Full Verse",
-      "subtitle": "Open Waktu to see full details and translation.",
-      "image_title": "Tap For Full Verse",
-      "image_subtitle": "Open Waktu to see full details and translation.",
-      "image_url": "https://blinkdagger182.github.io/waktu-config/images/ayat-recitation.png?v=4"
     }
   ]
 }
